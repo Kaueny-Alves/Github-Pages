@@ -1,0 +1,126 @@
+ *{
+       margin: 0px;
+       padding: 0px;
+   }
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+    list-style: none;
+    
+}
+
+/*fotos e video*/
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+p{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+
+.flex{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 100%;
+    margin: 50px;
+}
+
+.flex > article {
+    flex: 1 1 250px;
+    margin: 20px 20px;
+    
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+
+footer{
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding:20px;
+    text-align: center;
+}
+
+
+/*menu*/
+nav{
+    width: 100px;
+    height: 100%;
+    left: -100px;
+    position: absolute;
+    transition: all .5s;
+}
+
+ ul{
+    background-color: white;
+    list-style: none;
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+
+
+ #titulo { 
+    background-color: black;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px 5px;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+}   
+
+.fotomenu {
+     width: 40px;
+}   
+
+input[type="checkbox"]{
+     display: none;
+}
+
+input[type="checkbox"]:checked ~nav{
+     transform: translateX(100px);
+
+}
+   
+label{
+     padding: 10px;
+     position: absolute;
+     z-index: 1;
+}
+
